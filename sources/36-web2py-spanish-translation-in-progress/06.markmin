@@ -1,15 +1,17 @@
-## The database abstraction layer
+## La capa de abstraccion a base de datos.
 ``DAL``:inxx
 
-### Dependencies
+### Dependencias
 
-web2py comes with a Database Abstraction Layer (DAL), an API that maps Python objects into database objects such as queries, tables, and records. The DAL dynamically generates the SQL in real time using the specified dialect for the database back end, so that you do not have to write SQL code or learn different SQL dialects (the term SQL is used generically), and the application will be portable among different types of databases. At the time of this writing, the supported databases are SQLite (which comes with Python and thus web2py), PostgreSQL, MySQL, Oracle, MSSQL, FireBird, DB2, Informix, Ingres, the Google App Engine (SQL and NoSQL) and MongoDB. Experimentally we support more databases. Please check on the web2py web site and mailing list for more recent adapters. Google NoSQL is treated as a particular case in Chapter 13.
+Web2py viene con una Capa de Abstracion a Bases de Datos (DAL), una API que mapea objetos Python en objetos de base de datos como consultas, tablas y registros. La DAL genera dinamicamente SQL en tiempo real usando el dialecto especifico para el motor de datos, entonces usted no tiene que escribir codigo SQL o aprender diferentes dialectos SQL (el termino SQL es usado genericamennte ), y la aplicacion sera portable entre diferentes tipos de base de datos. En el momento de este escrito , las base de datos soportadas son SQLite (que viene con Python y por lo tanto con web2py),  PostgreSQL, MySQL, Oracle, MSSQL, FireBird, DB2, Informix, Ingres, Google App Engine (SQL y NoSQL) y MongoDB. Experimentalmente tiene soporte para mas Bases de Datos .Por favor corrobore en el sitio web de web2py y en la lista de correo para adaptadores recientes 
+Google NoSQL es tratado como un caso particular en el Capitulo 13 .
 
-The Windows binary distribution works out of the box with SQLite and MySQL. The Mac binary distribution works out of the box with SQLite.
-To use any other database back-end, run from the source distribution and install the appropriate driver for the required back end.
+La distribucion binaria de Windows funciona fuera de la caja con SQLite y MYSQL. La distribucion binaria de Mac funciona fuera de la caja con SQLite.
+
+
+Para usar cualquier otro motor de base de datos , correr a partir de la distribución de código fuente e instalar el controlador apropiado para el motor requerido.
 ``database drivers``:inxx
-
-Once the proper driver is installed, start web2py from source, and it will find the driver. Here is a list of drivers:
+Una vez que el controlador apropiado está instalado, inicie web2py desde el código fuente, y se encuentra el controlador. Aquí está una lista de los controladores:
 
 ``DAL``:inxx ``SQLite``:inxx ``MySQL``:inxx ``PostgresSQL``:inxx ``Oracle``:inxx ``MSSQL``:inxx ``FireBird``:inxx ``DB2``:inxx ``Informix``:inxx ``Sybase``:inxx ``Teradata``:inxx ``MongoDB``:inxx ``CouchDB``:inxx ``SAPDB``:inxx ``Cubrid``:inxx
 
