@@ -16,13 +16,13 @@ Una vez que el controlador apropiado está instalado, inicie web2py desde el có
 ``DAL``:inxx ``SQLite``:inxx ``MySQL``:inxx ``PostgresSQL``:inxx ``Oracle``:inxx ``MSSQL``:inxx ``FireBird``:inxx ``DB2``:inxx ``Informix``:inxx ``Sybase``:inxx ``Teradata``:inxx ``MongoDB``:inxx ``CouchDB``:inxx ``SAPDB``:inxx ``Cubrid``:inxx
 
 ----------
-database | drivers (source)
-SQLite | sqlite3 or pysqlite2 or zxJDBC ``zxjdbc``:cite  (on Jython)
-PostgreSQL | psycopg2 ``psycopg2``:cite  or pg8000 ``pg8000``:cite or zxJDBC ``zxjdbc``:cite  (on Jython)
-MySQL | pymysql ``pymysql``:cite or MySQLdb ``mysqldb``:cite
+Base de Datos | Controladores (fuente)
+SQLite | sqlite3 o pysqlite2 or zxJDBC ``zxjdbc``:cite  (sobre Jython)
+PostgreSQL | psycopg2 ``psycopg2``:cite  o pg8000 ``pg8000``:cite o zxJDBC ``zxjdbc``:cite  (sobre Jython)
+MySQL | pymysql ``pymysql``:cite o MySQLdb ``mysqldb``:cite
 Oracle | cx_Oracle ``cxoracle``:cite
 MSSQL | pyodbc ``pyodbc``:cite
-FireBird | kinterbasdb ``kinterbasdb``:cite or fdb or pyodbc
+FireBird | kinterbasdb ``kinterbasdb``:cite o fdb o pyodbc
 DB2 | pyodbc ``pyodbc``:cite
 Informix | informixdb ``informixdb``:cite
 Ingres | ingresdbi ``ingresdbi``:cite
@@ -34,7 +34,7 @@ MongoDB | pymongo ``pymongo``:cite
 IMAP | imaplib ``IMAP``:cite 
 ---------
 
-``sqlite3``, ``pymysql``, ``pg8000``, and ``imaplib`` ship with web2py. Support of MongoDB is experimental. The IMAP option allows to use DAL to access IAMP.
+``sqlite3``, ``pymysql``, ``pg8000``, y  ``imaplib`` incluidos con web2py. El sopor of MongoDB is experimental. The IMAP option allows to use DAL to access IAMP.
 
 web2py defines the following classes that make up the DAL:
 
