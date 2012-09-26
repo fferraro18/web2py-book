@@ -46,12 +46,13 @@ db = DAL('sqlite://storage.db')
 ``:code
 
 ``define_table``:inxx
-**Table** representa una tabla de la base de datos .  
-**Table** represents a database table.  You do not directly instantiate Table; instead, ``DAL.define_table`` instantiates it.
+**Table** representa una tabla de la base de datos . Usted no debe instanciar directamente Table; sino ``DAL.define_table`` crea una instancia. 
+
 ``
 db.define_table('mytable', Field('myfield'))
 ``:code
 
+Los métodos mas importantes de una Tabla 
 The most important methods of a Table are:
 ``insert``:inxx
 ``truncate``:inxx
