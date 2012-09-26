@@ -34,17 +34,19 @@ MongoDB | pymongo ``pymongo``:cite
 IMAP | imaplib ``IMAP``:cite 
 ---------
 
-``sqlite3``, ``pymysql``, ``pg8000``, y  ``imaplib`` incluidos con web2py. El sopor of MongoDB is experimental. The IMAP option allows to use DAL to access IAMP.
+``sqlite3``, ``pymysql``, ``pg8000``, y  ``imaplib`` incluidos con web2py. El soporte para MongoDB es experimental. La opción IMAP permite usar DAL para acceder a un servidor IMAP.
 
-web2py defines the following classes that make up the DAL:
+web2py define las siguientes clases  que componen el DAL :
 
-**DAL** represents a database connection. For example:
+**DAL** representa la conexion a base de datos. Por Ejemplo:
+
 ``sqlite``:inxx
 ``
 db = DAL('sqlite://storage.db')
 ``:code
 
 ``define_table``:inxx
+**Table** representa una tabla de la base de datos .  
 **Table** represents a database table.  You do not directly instantiate Table; instead, ``DAL.define_table`` instantiates it.
 ``
 db.define_table('mytable', Field('myfield'))
