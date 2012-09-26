@@ -52,8 +52,7 @@ db = DAL('sqlite://storage.db')
 db.define_table('mytable', Field('myfield'))
 ``:code
 
-Los métodos mas importantes de una Tabla 
-The most important methods of a Table are:
+Los métodos mas importantes de una Tabla son:
 ``insert``:inxx
 ``truncate``:inxx
 ``drop``:inxx
@@ -62,9 +61,10 @@ The most important methods of a Table are:
 ``.insert``, ``.truncate``, ``.drop``, and ``.import_from_csv_file``.
 
 ``Field``:inxx
-**Field** represents a database field. It can be instantiated and passed as an argument to ``DAL.define_table``.
+**Field** representa una campo de la base de datos. Se pueden crear instancias y pasar como argumentos a ``DAL.define_table``.
 
 ``Rows``:inxx
+**DAL Rows** ``Row``:inxx es un objeto devuelto por un select en la base de datos.
 **DAL Rows** ``Row``:inxx  is the object returned by a database select. It can be thought of as a list of ``Row`` rows:
 ``
 rows = db(db.mytable.myfield!=None).select()
