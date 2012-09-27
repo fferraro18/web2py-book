@@ -64,13 +64,14 @@ Los métodos mas importantes de una Tabla son:
 **Field** representa una campo de la base de datos. Se pueden crear instancias y pasar como argumentos a ``DAL.define_table``.
 
 ``Rows``:inxx
-**DAL Rows** ``Row``:inxx es un objeto devuelto por un select en la base de datos.
-**DAL Rows** ``Row``:inxx  is the object returned by a database select. It can be thought of as a list of ``Row`` rows:
+**DAL Rows** ``Row``:inxx es un objeto devuelto por un select en la base de datos. Se puede considerar como una lista de filas ``Row``:
+
 ``
 rows = db(db.mytable.myfield!=None).select()
 ``:code
 
 ``Row``:inxx
+
 **Row** contains field values.
 ``
 for row in rows:
